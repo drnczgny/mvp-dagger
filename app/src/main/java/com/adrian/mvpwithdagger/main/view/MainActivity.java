@@ -1,5 +1,6 @@
 package com.adrian.mvpwithdagger.main.view;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -16,6 +17,7 @@ import com.adrian.mvpwithdagger.main.di.DaggerMainComponent;
 import com.adrian.mvpwithdagger.main.di.MainComponent;
 import com.adrian.mvpwithdagger.main.di.MainModule;
 import com.adrian.mvpwithdagger.main.presenter.MainPresenter;
+import com.adrian.mvpwithdagger.omdb.view.OmdbApiActivity;
 
 import javax.inject.Inject;
 
@@ -78,6 +80,8 @@ public class MainActivity extends AppCompatActivity implements MainView {
                         navItemIndex = 0;
                         break;
                     case R.id.nav_ombdapi:
+                        startActivity(new Intent(MainActivity.this, OmdbApiActivity.class));
+                        drawerLayout.closeDrawers();
                         return true;
                     default:
                         navItemIndex = 0;
