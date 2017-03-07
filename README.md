@@ -1,3 +1,3 @@
 # mvp-dagger-retrofit
 
-Login and Main page with dagger, MVP, and Retrofit service for  Open Movie Database API
+Login, Main, Omdb page with dagger, MVP, and Retrofit service for Open Movie Database API
