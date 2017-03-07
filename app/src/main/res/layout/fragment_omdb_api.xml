@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adrian.mymvpexample.omdb.view.OmdbApiFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="OMDB API fragment" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnFindByYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="find by year" />
+
+            <Button
+                android:id="@+id/btnFindByTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="find by title" />
+
+            <Button
+                android:id="@+id/btnFindByBoth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="find by both" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMovies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</FrameLayout>
